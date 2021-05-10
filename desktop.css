@@ -1,0 +1,20 @@
+.navbar {
+  display: none;
+}
+.hero {
+  width: 50%;
+}
+.about-me {
+  width: 50%;
+}
+.skills {
+  position: relative;
+}
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-container {
+  width: 40%;
+  margin: 5%;
+}

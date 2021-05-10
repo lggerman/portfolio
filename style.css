@@ -87,12 +87,12 @@ h2 {
   margin: 1.5rem;
 }
 .glassmorphism {
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(5.5px);
+  background: rgba(195, 130, 158, 0.13);
+  box-shadow: 0 8px 32px 0 rgba(195, 130, 158, 0.37);
+  backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(5.5px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(195, 130, 158, 0.2);
 }
 .position-container {
   position: relative;
@@ -148,19 +148,23 @@ h2 {
   margin: 2rem;
   padding: 1rem;
 }
+.projects-container {
+  width: 100%;
+}
 .project-container {
   display: flex;
   flex-direction: column;
   position: relative;
   margin: 5vh 0;
-  height: 200px;
+  height: 50vh;
+  min-height: 200px;
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid white;
-}
-#wayv-project {
-  background: url("./resources/images/358e13e7e132b8de897c344302348cae.jpg");
   width: 100%;
+}
+.project-container:nth-child(1) {
+  background: url("./resources/images/358e13e7e132b8de897c344302348cae.jpg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -201,7 +205,7 @@ h2 {
   display: flex;
   flex-direction: column;
   background-color: var(--primary-color);
-  height: 25vh;
+  height: 100%;
   padding: 2vh;
 }
 .footer h4 {
