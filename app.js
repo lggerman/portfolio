@@ -11,22 +11,22 @@ particlesJS({
       value: "#ffffff",
     },
     shape: {
-      type: "circle",
+      type: "image",
       stroke: {
-        width: 0,
+        width: 2,
         color: "#000000",
       },
       polygon: {
         nb_sides: 5,
       },
       image: {
-        src: "img/github.svg",
+        src: "./009.png",
         width: 100,
         height: 100,
       },
     },
     opacity: {
-      value: 0.5,
+      value: 0.6,
       random: false,
       anim: {
         enable: false,
@@ -36,7 +36,7 @@ particlesJS({
       },
     },
     size: {
-      value: 3,
+      value: 8,
       random: true,
       anim: {
         enable: false,
@@ -75,7 +75,7 @@ particlesJS({
         mode: "grab",
       },
       onclick: {
-        enable: true,
+        enable: false,
         mode: "push",
       },
       resize: true,

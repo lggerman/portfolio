@@ -1,3 +1,6 @@
+:root {
+  --primary-color: #562135;
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +12,32 @@ html {
 body {
   /* background-color: #020113; */
   background-color: #000;
-  font-family: "Itim", cursive;
+  font-family: "Raleway", sans-serif;
   color: white;
   overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Oswald", sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 2.2rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h1,
+h2 {
+  color: #e9b1cd;
+  -webkit-text-stroke: #c3829e 1px;
 }
 #particles-js {
   height: 100vh;
@@ -19,28 +45,46 @@ body {
   z-index: -1;
   position: fixed;
 }
+.centered {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 2.5vh 5vw;
 }
-.navbar img {
-  width: 100px;
+.navbar-list {
+  width: 80%;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  font-size: 1.4rem;
+  transform: translateX(-200%);
+  transition: all 0.5s ease-in-out;
+}
+.navbar-list a {
+  color: white;
+  text-decoration: none;
 }
 .hero {
-  display: flex;
-  flex-direction: column;
-  padding: 10vh 5vh;
-  font-size: 2rem;
+  padding: 10vh 8vw;
 }
 .about-me {
-  background-color: #6a5acd;
-  display: flex;
+  background-color: var(--primary-color);
   flex-direction: column;
   color: white;
   min-height: 50vh;
   font-size: 2rem;
-  padding: 10vh 10vw 20vh;
+  padding: 8vh 8vw 18vh;
+}
+.about-me__title {
+  margin: 1rem;
+}
+.about-me__text {
+  margin: 1.5rem;
 }
 .glassmorphism {
   background: rgba(255, 255, 255, 0.1);
@@ -60,10 +104,10 @@ body {
   top: 85%;
   width: 80%;
   background-color: white;
-  color: #6a5acd;
+  color: var(--primary-color);
   display: flex;
   justify-content: space-around;
-  padding: 0;
+  padding: 1rem;
   margin: 0 auto;
   border-radius: 7.5px;
   text-transform: uppercase;
@@ -74,16 +118,24 @@ body {
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding: 10vh 0;
+  padding: 6vh 2vw;
+  font-size: 1.3rem;
 }
 .backend-skills {
-  border-right: 1px solid #6a5acd;
+  border-right: 1px solid var(--primary-color);
 }
 .frontend-skills {
-  border-left: 1px solid #6a5acd;
+  border-left: 1px solid var(--primary-color);
 }
-.skills ul {
+.skills-title {
+  margin: 1rem;
+}
+.skills-list {
   list-style: none;
+  font-size: 1.5rem;
+}
+.skills-list li {
+  margin: 0.5rem;
 }
 .projects {
   margin-top: 50vh;
@@ -91,6 +143,10 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 1.8rem;
+}
+.projects-title {
+  margin: 2rem;
+  padding: 1rem;
 }
 .project-container {
   display: flex;
@@ -100,8 +156,9 @@ body {
   height: 200px;
   border-radius: 10px;
   overflow: hidden;
+  border: 1px solid white;
 }
-#stpro {
+#wayv-project {
   background: url("./resources/images/358e13e7e132b8de897c344302348cae.jpg");
   width: 100%;
   background-position: center;
@@ -120,23 +177,47 @@ body {
   color: white;
   transition: all 0.5s ease-in-out;
   opacity: 0;
+  padding: 1rem;
+}
+.project-description h3 {
+  margin: 1rem;
+}
+.project-description p {
+  margin: 1rem;
+}
+.pagelink {
+  color: white;
+  border: 2px solid white;
+  text-decoration: none;
+  padding: 1rem;
+  margin: 1rem;
 }
 .project-visible {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.8);
 }
-.footer a {
-  color: rgb(255, 255, 255);
-}
-.footer h2 {
-  text-transform: capitalize;
-}
+
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: #6a5acd;
+  background-color: var(--primary-color);
+  height: 20vh;
+  padding: 2vh;
 }
-
+.footer a {
+  color: rgb(255, 255, 255);
+  margin: 1vh 2vh;
+}
+.footer h2 {
+  text-transform: capitalize;
+  margin: 1vh;
+}
+.footer p {
+  margin: 2vh;
+}
+.footer-contact-container {
+  width: 100%;
+}
 .menu-button {
   position: relative;
   display: flex;
@@ -185,8 +266,6 @@ body {
 .menu-button.open .menu-button__burger::after {
   transform: rotate(-45deg) translate(35px, 35px);
 }
-.centered {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.navbar-list.desplegate {
+  transform: translateX(0%);
 }

@@ -1,13 +1,16 @@
-const $brgButton = document.querySelector(".menu-button");
-const $projects = document.querySelectorAll(".project-container");
-$brgButton.addEventListener("click", () => {
-  $brgButton.classList.toggle("open");
+const $BRGBUTTON = document.querySelector(".menu-button");
+const $PROJECTS = document.querySelectorAll(".project-container");
+const $BRGLIST = document.querySelector(".navbar-list");
+
+$BRGBUTTON.addEventListener("click", () => {
+  $BRGBUTTON.classList.toggle("open");
+  $BRGLIST.classList.toggle("desplegate");
 });
 
-$projects.forEach((item, i) => {
+$PROJECTS.forEach((item, i) => {
   item.addEventListener("click", () => {
     item.classList.toggle("project-active");
-    $projects[i]
+    $PROJECTS[i]
       .querySelector(".project-description")
       .classList.toggle("project-visible");
   });
