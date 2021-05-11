@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway:wght@300;600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -42,7 +44,6 @@
       </div>
     </nav>
     <ul class="navbar-list-desktop centered">
-      <a href="#about-me">About me</a>
       <a href="#projects">My Projects</a>
       <a href="#contact">Contact</a>
     </ul>
@@ -57,16 +58,16 @@
     <section class="hero centered">
       <h1>Junior Fullstack Developer & self-taught student</h1>
     </section>
-    <div class="position-container">
-      <section class="about-me glassmorphism centered">
-        <h2 id="about-me" class="about-me__title">About Me</h2>
-        <p class="about-me__text">
-          Hi, nice to meet you, im German, i'm a self-taught student that seeks
-          to grow every day as a developer and as a person, i love know new
-          things and good people ♥
-        </p>
-      </section>
-      <section class="skills">
+    <section class="about-me glassmorphism centered">
+      <h2 id="about-me" class="about-me__title">About Me</h2>
+      <p class="about-me__text">
+        Hi, nice to meet you, im German, i'm a self-taught student that seeks to
+        grow every day as a developer and as a person, i love know new things
+        and good people ♥
+      </p>
+    </section>
+    <section class="skills">
+      <div class="position-container centered">
         <div class="skills-container centered">
           <h3 class="skills-title">knowledges</h3>
           <ul class="skills-list">
@@ -80,8 +81,8 @@
           </ul>
           <h4>list under permanent construction 💫</h4>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
     <section class="projects centered" id="projects">
       <h2 class="projects-title">Things what i made</h2>
       <div class="projects-container">
@@ -129,7 +130,56 @@
         </div>
       </div>
     </section>
-    <section class="hire-me"></section>
+    <section class="contact-me__section centered">
+      <h2>Contact me</h2>
+      <div class="contact-me centered">
+        <form
+          id="form-contact"
+          class="form-contact"
+          accept-charset="utf-8"
+          action="https://formspree.io/f/xwkalkrl"
+          method="POST"
+        >
+          <div class="form-group">
+            <label for="name">Name: </label>
+            <input
+              name="name"
+              id="name"
+              type="text"
+              placeholder="*require"
+              class="form-input"
+              required=""
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input
+              name="Email"
+              id="email"
+              type="email"
+              placeholder="*require"
+              class="form-input"
+              required=""
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message: </label>
+            <textarea
+              name="message"
+              id="message"
+              cols="20"
+              rows="8"
+              placeholder="message in spanish or english"
+              class="form-input"
+              required=""
+            ></textarea>
+          </div>
+          <button type="submit" class="centered">Submit</button>
+          <p id="status"></p>
+        </form>
+      </div>
+    </section>
     <footer class="footer centered">
       <h4>difficulty leads to excellence</h4>
       <div class="footer-contact-container centered">

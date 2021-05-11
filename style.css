@@ -74,6 +74,10 @@ h2 {
 .navbar-list a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
+}
+.navbar-list a:hover {
+  color: #c3829e;
 }
 .hero {
   padding: 10vh 8vw;
@@ -100,24 +104,28 @@ h2 {
   border-radius: 10px;
   border: 1px solid rgba(195, 130, 158, 0.2);
 }
-.position-container {
-  position: relative;
-}
+
 .skills {
+  position: relative;
+  width: 80%;
+  background-color: transparent;
+  color: var(--primary-color);
+  margin: 0 auto 1rem;
+  height: 400px;
+}
+.position-container {
   position: absolute;
   left: 0;
   right: 0;
-  top: 85%;
-  width: 80%;
-  background-color: white;
-  color: var(--primary-color);
+  top: -20%;
   display: flex;
-  justify-content: space-around;
-  padding: 1rem;
-  margin: 0 auto;
   border-radius: 7.5px;
   text-transform: uppercase;
   font-size: 1rem;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  background-color: white;
 }
 .skills-container {
   width: 50%;
@@ -125,6 +133,7 @@ h2 {
   flex-direction: column;
   padding: 6vh 2vw;
   font-size: 1.3rem;
+  height: auto;
 }
 .skills h3,
 h4 {
@@ -138,8 +147,8 @@ h4 {
   margin: 0.5rem;
 }
 .projects {
-  margin-top: 50vh;
-  padding: 5vh 10vw;
+  margin-top: 5rem;
+  padding: 5rem 10vw;
   display: flex;
   flex-direction: column;
   font-size: 1.8rem;
@@ -200,7 +209,70 @@ h4 {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.8);
 }
-
+.contact-me__section {
+  background-color: transparent;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  margin: 4rem auto;
+  flex-direction: column;
+}
+.contact-me {
+  width: 80%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  color: black;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 3rem auto;
+  margin: 1rem auto;
+  font-size: 1.4rem;
+}
+.form-contact {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+.form-contact button {
+  width: 30%;
+  min-width: 90px;
+  background-color: white;
+  border: 1px solid #c3829e;
+  padding: 1.5rem 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+.form-contact button:hover {
+  background-color: #c3829e;
+  transition: 0.3s ease-in-out;
+  color: white;
+}
+.form-group {
+  font-weight: bold;
+  height: auto;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  margin: 2rem;
+}
+.form-input {
+  border: 1px solid #c3829e;
+  font-weight: lighter;
+  padding: 0.5rem;
+}
+.form-input:focus {
+  outline-width: 0;
+}
+.form-input::placeholder {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.7rem;
+}
+#status {
+  margin: 1rem;
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -260,14 +332,20 @@ h4 {
 
 .menu-button.open .menu-button__burger {
   transform: translateX(-50px);
+
   background: transparent;
   box-shadow: none;
 }
+.menu-button.open {
+  border: 1px solid #c3829e;
+}
 .menu-button.open .menu-button__burger::before {
   transform: rotate(45deg) translate(35px, -35px);
+  background-color: #c3829e;
 }
 .menu-button.open .menu-button__burger::after {
   transform: rotate(-45deg) translate(35px, 35px);
+  background-color: #c3829e;
 }
 .navbar-list.desplegate {
   transform: translateX(0%);
