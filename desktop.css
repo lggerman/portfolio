@@ -1,20 +1,78 @@
 .navbar {
   display: none;
 }
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
 .hero {
-  width: 50%;
+  display: none;
 }
 .about-me {
+  display: none;
+}
+.navbar-list-desktop {
+  background-color: #562135;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3rem;
+}
+.navbar-list-desktop a {
+  color: white;
+  text-decoration: none;
+}
+.hero-desktop {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+.hero-desktop h1 {
   width: 50%;
+}
+.hero-desktop p {
+  width: 50%;
+  font-size: 3rem;
 }
 .skills {
   position: relative;
+  height: 90vh;
+  min-height: 500px;
+}
+.skills h3,
+h4 {
+  margin: 2rem;
+}
+.skills-container {
+  width: 100%;
+  justify-content: space-around;
+}
+.skills-list {
+  font-size: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+.skills-list li {
+  width: 30%;
+  margin: 2rem 1rem;
+}
+.projects {
+  margin-top: 10vh;
 }
 .projects-container {
   display: flex;
   flex-wrap: wrap;
 }
 .project-container {
-  width: 40%;
-  margin: 5%;
+  width: 30%;
+  height: 40vh;
+  margin: calc(10% / 6);
 }

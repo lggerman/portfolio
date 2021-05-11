@@ -50,6 +50,12 @@ h2 {
   align-items: center;
   text-align: center;
 }
+.navbar-list-desktop {
+  display: none;
+}
+.hero-desktop {
+  display: none;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -113,21 +119,15 @@ h2 {
   text-transform: uppercase;
   font-size: 1rem;
 }
-.frontend-skills,
-.backend-skills {
+.skills-container {
   width: 50%;
   display: flex;
   flex-direction: column;
   padding: 6vh 2vw;
   font-size: 1.3rem;
 }
-.backend-skills {
-  border-right: 1px solid var(--primary-color);
-}
-.frontend-skills {
-  border-left: 1px solid var(--primary-color);
-}
-.skills-title {
+.skills h3,
+h4 {
   margin: 1rem;
 }
 .skills-list {
