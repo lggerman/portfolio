@@ -259,7 +259,8 @@ h4 {
   margin: 2rem;
 }
 .form-input {
-  border: 1px solid #c3829e;
+  border: none;
+  background-color: rgba(195, 130, 158, 0.2);
   font-weight: lighter;
   padding: 0.5rem;
 }
